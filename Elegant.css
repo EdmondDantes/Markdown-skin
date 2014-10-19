@@ -1,0 +1,155 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Monaco", Helvetica, "Hiragino Sans GB", Arial;  /*  add Monaco */
+    font-size: 14px;                /*  add 1px */
+    line-height: 21px;              /* add 3px */
+    color: #484848;                 /* color: #737373; */
+    background-color: #f9fafb;      /* background-color: white; */
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+table tr:nth-child(odd) > th, table tr:nth-child(odd) > td {
+    background-color: #f9f9f9;
+}
+a {
+    color: #007AFF;                 /* color: #0069d6; */
+    text-decoration: none;          /* add */
+}
+a:hover {
+    color: #007AFF;                 /* color: #0050a3; */
+    text-decoration: underline;     /* text-decoration: none; */
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+    text-indent: 2em;               /* add */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;            
+}
+h1 {
+    margin-bottom: 16px;            /* -2px */
+    font-size: 24px;                /* -6px */
+}
+h2 {
+    font-size: 22px;                /* -2px */
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 15px;                /* +1px */
+}
+h6 {
+    font-size: 14px;                /* +1px */
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:36px;                 /* -4px */
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    /* background-color: #fee9cc; */
+    /* color: rgba(0, 0, 0, 0.75); */
+    color: rgba(0,136,204,1);
+    border: 1px solid;
+    padding: 1px 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 17px;              /* +1px */
+    border: 1px solid #c7cfd5;      /* border: 1px solid #d9d9d9; */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #F1F5F9;      /* add */
+    font-size: 13px; 
+}
+pre code {
+    background-color: #F1F5F9;      /* background-color: #fff; */
+    color:#666;                     /* color:#737373; */
+    padding: 0;
+    border: none;
+    font-size: 13px; 
+}
+sup {
+    font-size: 0.85em;              /* +0.02em */
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
